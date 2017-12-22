@@ -1,0 +1,15 @@
+language: node_js
+
+node_js: stable
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm test
+
+# Note: you should set Environment Variables here or 'Settings' on travis-ci.org
+env:
+  global:
+    - GH_REF: "git@github.com:webarserker/whevtWebApp.git"
